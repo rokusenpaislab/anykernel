@@ -4,7 +4,7 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=Roku+
+kernel.string=Vertigo
 do.devicecheck=1
 do.modules=0
 do.systemless=1
