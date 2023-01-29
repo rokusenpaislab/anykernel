@@ -465,14 +465,28 @@ if [ -f banner ]; then
   ui_print " " " ";
 fi;
 
-KERNEL_STRING="$(file_getprop anykernel.sh kernel.string)";
-ui_print "$KERNEL_STRING";
+ui_print "                                                     ";
+ui_print "=====================================================";
+ui_print "                         _   _                       ";            
+ui_print "                        | | (_)                      ";            
+ui_print "         __   _____ _ __| |_ _  __ _  ___            ";
+ui_print "         \ \ / / _ \ '__| __| |/ _' |/ _ \           ";
+ui_print "          \ V /  __/ |  | |_| | (_| | (_) |          ";
+ui_print "           \_/ \___|_|   \__|_|\__, |\___/           ";
+ui_print "                                __/ |                ";    
+ui_print "                               |___/                 "; 
+ui_print "                                                     "; 
+ui_print "=====================================================";    
+ui_print "               -by @rokusenpaii                      ";
+ui_print "                                                     ";
+ui_print "      AnyKernel3 by osm0sis @ xda-developers         ";
+ui_print "                                                     ";
+
 if [ -f version ]; then
   ui_print " ";
   ui_printfile version;
   ui_print " ";
 fi;
-ui_print " " "AnyKernel3 by osm0sis @ xda-developers" " ";
 $BB grep -oE 'AK_BASE.*' META-INF/com/google/android/updater-script >&2;
 ui_print " ";
 
